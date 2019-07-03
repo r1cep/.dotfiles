@@ -19,3 +19,4 @@
 	default = simple
 [core]
 	editor = vim -c \"set fenc=utf8\"
+	quotepath = false
