@@ -17,3 +17,5 @@
     diffc  = diff --cached
 [push]
 	default = simple
+[core]
+	editor = vim -c \"set fenc=utf8\"
