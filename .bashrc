@@ -27,8 +27,20 @@ export PROMPT_COMMAND="history -a"
 # fi
 
 # User specific aliases and functions
-alias ls='ls --color=auto --show-control-chars'
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto --show-control-chars'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 alias ll='ls -l'
+alias la='ls -A'
 alias l='ls -CF'
 
 # Interactive operation...
@@ -39,9 +51,6 @@ alias mv="mv -i"
 # Misc :)
 alias less='less -r'                          # raw control characters
 alias whence='type -a'                        # where, of a sort
-alias grep='grep --color'                     # show differences in colour
-alias egrep='egrep --color=auto'              # show differences in colour
-alias fgrep='fgrep --color=auto'              # show differences in colour
 if type 'colordiff' > /dev/null 2>&1; then
     alias diff='colordiff -u'
 else
