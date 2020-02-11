@@ -1,10 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
+    [[ "$f" == ".alacritty.yml" ]] && continue
 
     ln -snfv ".dotfiles/$f" "${HOME}/$f"
 done
