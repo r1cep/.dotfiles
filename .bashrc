@@ -86,7 +86,6 @@ fi
 # .bashrc for interactive terminal
 [ -z "$PS1" ] && return
 #export TERM=xterm-256color
-printf "\033k$(hostname)\033\\"
 
 # .bashrc PS1 custom view
 PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[35m\]$(${gitps1})'$'\n\[\e[0m\]$ '
