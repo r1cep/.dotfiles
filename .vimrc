@@ -156,6 +156,18 @@ if has('vim_starting') && dein#check_install()
 endif
 " }}}
 
+"Tmux settings {{{
+" ref. https://qiita.com/ssh0/items/9300a22954cf7016279d
+if $TMUX != ""
+  augroup titlesettings
+    autocmd!
+    autocmd BufEnter * call system("tmux rename-window " . "'[vim] " . expand("%:t") . "'")
+    autocmd VimLeave * call system("tmux rename-window bash")
+    autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
+  augroup END
+endif
+" }}}
+
 " Colors {{{
 filetype plugin indent on
 syntax enable
