@@ -83,6 +83,12 @@ if [ -f "${HOME}/.dotfiles/bin/git-completion.bash" ]; then
     source "${HOME}/.dotfiles/bin/git-completion.bash"
 fi
 
+# gh completion settings.
+if type "gh" > /dev/null 2>&1
+then
+    eval "$(gh completion -s bash)"
+fi
+
 # .bashrc for interactive terminal
 [ -z "$PS1" ] && return
 #export TERM=xterm-256color
