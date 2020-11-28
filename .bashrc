@@ -89,6 +89,9 @@ then
     eval "$(gh completion -s bash)"
 fi
 
+# https://hackmd.io/@badging/wsl2#Troubleshooting-PATH
+PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
+
 # .bashrc for interactive terminal
 [ -z "$PS1" ] && return
 #export TERM=xterm-256color
