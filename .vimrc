@@ -17,7 +17,7 @@ set expandtab
 
 augroup vimrc
   autocmd! FileType html       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType css        setlocal shiftwidth=4 tabstop=2 softtabstop=2
+  autocmd! FileType css        setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType yml        setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType yaml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType toml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
