@@ -90,7 +90,7 @@ then
 fi
 
 # https://hackmd.io/@badging/wsl2#Troubleshooting-PATH
-PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
+#PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
 
 # .bashrc for interactive terminal
 [ -z "$PS1" ] && return
