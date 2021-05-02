@@ -48,13 +48,14 @@
             "cursorShape": "vintage",
 
             // Font
-            "fontFace": "Consolas",
+            //"fontFace": "Consolas",
             //"fontFace": "Cascadia Code",
             //"fontFace": "HackGen Console for Powerline",
             //"fontFace": "HackGen35 Console for Powerline",
             //"fontFace": "Ricty",
             //"fontFace": "Ricty Diminished for Powerline",
-            "fontSize": 12,
+            "fontFace": "JetBrains Mono",
+            "fontSize": 11,
 
             // UI
             "padding": "8, 8, 8, 8",
