@@ -163,7 +163,7 @@ if $TMUX != ""
   augroup titlesettings
     autocmd!
     autocmd BufEnter * call system("tmux rename-window " . "'[vim] " . expand("%:t") . "'")
-    autocmd VimLeave * call system("tmux rename-window bash")
+    autocmd VimLeave * call system("tmux rename-window fish")
     autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
   augroup END
 endif
