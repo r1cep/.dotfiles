@@ -172,6 +172,9 @@ endif
 " Colors {{{
 filetype plugin indent on
 syntax enable
+
+" True color settings
+set termguicolors
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
