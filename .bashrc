@@ -99,5 +99,10 @@ fi
 # .bashrc PS1 custom view
 PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[35m\]$MSYSTEM\[\e[0m\] \[\e[33m\]\w\[\e[35m\]$(${gitps1})'$'\n\[\e[0m\]$ '
 
+# Genie settings
+if [[ ! -v INSIDE_GENIE ]]; then
+    exec /usr/bin/genie -s
+fi
+
 # fish settings
 exec fish
