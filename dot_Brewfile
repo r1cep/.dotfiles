@@ -1,0 +1,64 @@
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+
+# Development
+brew "bitwarden-cli"
+brew "chezmoi"
+brew "fish"
+brew "fisher"
+brew "fzf"
+brew "gh"
+brew "ghq"
+brew "git"
+brew "jq"
+brew "mas"
+brew "neovim", args: ["HEAD"]
+brew "rsync"
+brew "starship"
+brew "tmux"
+brew "tree"
+brew "volta"
+
+## Rust
+brew "bat"
+brew "exa"
+brew "fd"
+brew "git-delta"
+brew "grex"
+brew "procs"
+brew "ripgrep"
+brew "sd"
+brew "tldr"
+brew "tokei"
+#brew "tmux-thumbs"
+
+# Desktop Software
+cask "alfred"
+cask "appcleaner"
+cask "clipy"
+#cask "discord"
+cask "docker"
+cask "fig"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "rectangle"
+cask "topnotch"
+cask "visual-studio-code"
+
+# Hardware Support
+cask "karabiner-elements"
+#cask "keyboardcleantool"
+
+# Fonts
+cask "font-consolas-for-powerline"
+
+# App Store
+#mas "Be Focused - Focus Timer", id: 973134471
+mas "Bitwarden", id: 1352778147
+mas "EasyRes", id: 688211836
+mas "Keynote", id: 409183694
+#mas "Slack", id: 803453959
