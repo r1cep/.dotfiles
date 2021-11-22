@@ -6,11 +6,16 @@ set -gx XDG_DATA_HOME "$HOME/.local/share"
 # Editor
 set -gx EDITOR nvim
 
+## Neovim
+abbr -a vim "nvim"
+abbr -a vimdiff "nvim -d "
+
 # Aliaces
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
 
+## History
 abbr -a history " history --show-time='%Y-%m-%d %T '"
 
 # fzf
