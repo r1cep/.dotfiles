@@ -1,5 +1,9 @@
+[core]
+    quotepath = false
+
 [color]
-	ui = true
+    ui = true
+
 [alias]
     log1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)― %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
     log2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)― %an%C(reset)' --abbrev-commit
@@ -12,7 +16,26 @@
     wd = diff --color-words
     staged = diff --cached
     diffc  = diff --cached
+
 [push]
-	default = simple
-[core]
-	quotepath = false
+    default = simple
+
+[pager]
+    diff = delta
+    show = delta
+    log = delta
+    blame = delta
+    grep = delta
+    reflog = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    line-numbers = true
+    keep-plus-minus-markers = true
+    #side-by-side = true
