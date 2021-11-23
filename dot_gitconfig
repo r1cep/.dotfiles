@@ -16,5 +16,3 @@
 	default = simple
 [core]
 	quotepath = false
-[ghq]
-    root = ~/dev/ghq
