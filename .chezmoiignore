@@ -1,1 +1,7 @@
 settings.json
+{{- if (eq .chezmoi.os "darwin") }}
+.bash_profile
+.bashrc
+{{- else }}
+.Brewfile
+{{- end }}
