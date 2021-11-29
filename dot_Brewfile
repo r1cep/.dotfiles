@@ -14,6 +14,7 @@ brew "fzf"
 brew "gh"
 brew "ghq"
 brew "git"
+brew "gitui"
 brew "jq"
 brew "mas"
 brew "neovim", args: ["HEAD"]
