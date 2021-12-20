@@ -6,6 +6,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 
 # Development
+brew "act"
 brew "ansifilter"
 brew "bitwarden-cli"
 brew "chezmoi"
