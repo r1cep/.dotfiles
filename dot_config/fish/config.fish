@@ -34,9 +34,6 @@ end
 # ghq
 set -gx GHQ_ROOT "$XDG_DATA_HOME/ghq"
 
-# google cloud SDK
-set -gx PATH "$XDG_DATA_HOME/google-cloud-sdk/bin" $PATH
-
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"
