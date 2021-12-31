@@ -34,6 +34,11 @@ end
 # ghq
 set -gx GHQ_ROOT "$XDG_DATA_HOME/ghq"
 
+# Rust
+set -gx RUSTUP_HOME "$XDG_DATA_HOME/rustup"
+set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
+set -gx PATH "$CARGO_HOME/bin" $PATH
+
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"

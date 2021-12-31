@@ -20,6 +20,8 @@ brew "jq"
 brew "mas"
 brew "neovim", args: ["HEAD"]
 brew "rsync"
+brew "rustup-init"
+brew "rust-analyzer"
 brew "starship"
 brew "tmux"
 brew "tree"
