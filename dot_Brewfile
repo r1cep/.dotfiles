@@ -36,7 +36,6 @@ brew "ripgrep"
 brew "sd"
 brew "tldr"
 brew "tokei"
-#brew "tmux-thumbs"
 
 # Desktop Software
 cask "alfred"
