@@ -39,6 +39,14 @@ set -gx RUSTUP_HOME "$XDG_DATA_HOME/rustup"
 set -gx CARGO_HOME "$XDG_DATA_HOME/cargo"
 set -gx PATH "$CARGO_HOME/bin" $PATH
 
+# Rust utilities
+#abbr -a cat "bat"
+#abbr -a ls "exa"
+#abbr -a find "fd"
+#abbr -a ps "procs"
+#abbr -a grep "rg"
+#abbr -a sed "sd"
+
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"
