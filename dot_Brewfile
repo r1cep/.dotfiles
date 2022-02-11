@@ -43,7 +43,7 @@ brew "tokei"
 cask "alfred"
 cask "appcleaner"
 cask "clipy"
-#cask "discord"
+cask "discord"
 cask "docker"
 cask "fig"
 cask "google-cloud-sdk"
@@ -51,8 +51,10 @@ cask "google-japanese-ime"
 cask "immersed"
 cask "iterm2"
 cask "rectangle"
+cask "slack"
 cask "topnotch"
 cask "visual-studio-code"
+cask "zoom"
 
 # Hardware Support
 cask "karabiner-elements"
@@ -66,4 +68,3 @@ cask "font-consolas-for-powerline"
 mas "Bitwarden", id: 1352778147
 mas "EasyRes", id: 688211836
 mas "Keynote", id: 409183694
-#mas "Slack", id: 803453959
