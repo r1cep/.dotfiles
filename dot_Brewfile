@@ -60,7 +60,7 @@ cask "zoom"
 
 # Hardware Support
 cask "karabiner-elements"
-#cask "keyboardcleantool"
+cask "keyboardcleantool"
 
 # Fonts
 cask "font-consolas-for-powerline"
