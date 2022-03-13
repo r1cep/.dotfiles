@@ -41,3 +41,11 @@ user_emmet_settings = '{
 
 [[plugins]]
 repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+merged = 0
+rev = 'release'
+hook_add = '''
+  source $XDG_CONFIG_HOME/nvim/plugins/coc.rc.vim
+'''
