@@ -33,11 +33,13 @@ repo = 'thinca/vim-quickrun'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-user_emmet_settings = '{
-  "variables": {
-    "lang" : "ja"
-  }
-}'
+hook_add = '''
+  let g:user_emmet_settings = {
+  \  'variables': {
+  \    'lang' : 'ja'
+  \  }
+  \}
+'''
 
 [[plugins]]
 repo = 'posva/vim-vue'
