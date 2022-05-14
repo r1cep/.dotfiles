@@ -7,7 +7,6 @@ tap "homebrew/core"
 
 # Development
 brew "ansifilter"
-brew "bitwarden-cli"
 brew "chezmoi"
 brew "ffmpeg"
 brew "fish"
