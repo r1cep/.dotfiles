@@ -47,6 +47,10 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 #abbr -a grep "rg"
 #abbr -a sed "sd"
 
+# tabtab source for packages
+# uninstall by removing these lines
+[ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
+
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"
