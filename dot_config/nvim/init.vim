@@ -22,7 +22,7 @@ augroup vimrc
   autocmd! FileType yaml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType toml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType twig       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType json       setlocal shiftwidth=4 tabstop=4 softtabstop=4
+  autocmd! FileType json       setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
 
