@@ -39,4 +39,4 @@
     navigate = true
     line-numbers = true
     keep-plus-minus-markers = true
-    #side-by-side = true
+    side-by-side = true
