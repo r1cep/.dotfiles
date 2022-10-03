@@ -66,6 +66,7 @@ cask "keyboardcleantool"
 
 # Fonts
 cask "font-consolas-for-powerline"
+cask "font-noto-sans-jp"
 
 # App Store
 #mas "Be Focused - Focus Timer", id: 973134471
