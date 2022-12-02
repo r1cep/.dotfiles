@@ -26,6 +26,7 @@ brew "starship"
 brew "tmux"
 brew "tree"
 brew "volta"
+brew "wakatime-cli"
 
 ## Rust
 brew "bat"

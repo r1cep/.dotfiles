@@ -51,3 +51,6 @@ rev = 'release'
 hook_add = '''
   source $XDG_CONFIG_HOME/nvim/plugins/coc.rc.vim
 '''
+
+[[plugins]]
+repo = 'wakatime/vim-wakatime'
