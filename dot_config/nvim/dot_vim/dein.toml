@@ -18,7 +18,6 @@ repo = 'vim-airline/vim-airline'
 hook_add = '''
   let g:airline_powerline_fonts = 1
   let g:airline#extensions#tabline#enabled = 1
-
   let g:airline_left_sep = '⮀'
   let g:airline_left_alt_sep = '⮁'
   let g:airline_right_sep = '⮂'
@@ -60,5 +59,15 @@ repo = 'nvim-treesitter/nvim-treesitter'
 merged = 0
 on_event = 'BufRead'
 hook_post_update = 'TSUpdate'
-hook_source = 'source ~/.config/nvim/plugins/nvim-treesitter.lua'
+hook_source = 'source $XDG_CONFIG_HOME/nvim/plugins/nvim-treesitter.lua'
 
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'
+depends = ['plenary.nvim']
+rev = '0.1.x'
+hook_add = '''
+  source ${XDG_CONFIG_HOME}/nvim/plugins/telescope.lua
+'''
