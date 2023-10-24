@@ -52,6 +52,9 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
+# Completion for Google Cloud SDK
+source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"
