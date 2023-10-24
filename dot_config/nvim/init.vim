@@ -104,6 +104,8 @@ set pumheight=5
 " }}}
 
 " Key mapping {{{
+map <space> <leader>
+
   " Insert mode {{{
     inoremap [] []<LEFT>
     inoremap {} {}<LEFT>
