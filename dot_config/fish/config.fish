@@ -14,6 +14,7 @@ abbr -a vimdiff "nvim -d "
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
+alias sed="gsed"
 
 ## History
 abbr -a history " history --show-time='%Y-%m-%d %T '"
