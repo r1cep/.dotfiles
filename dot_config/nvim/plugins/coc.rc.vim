@@ -4,6 +4,7 @@ let g:coc_global_extensions = [
 \  'coc-eslint',
 \  'coc-html',
 \  'coc-json',
+\  'coc-lua',
 \  'coc-prettier',
 \  'coc-toml',
 \  'coc-tsserver',
