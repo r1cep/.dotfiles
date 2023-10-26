@@ -81,3 +81,9 @@ hook_source = 'source $XDG_CONFIG_HOME/nvim/plugins/telescope-fzf-native.lua'
 [[plugins]]
 repo = 'nvim-tree/nvim-web-devicons'
 hook_source = 'source $XDG_CONFIG_HOME/nvim/plugins/nvim-web-devicons.lua'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope-frecency.nvim'
+hook_add = '''
+  source $XDG_CONFIG_HOME/nvim/plugins/telescope-frecency.lua
+'''
