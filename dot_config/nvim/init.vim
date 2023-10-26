@@ -16,14 +16,16 @@ set softtabstop=4
 set expandtab
 
 augroup vimrc
-  autocmd! FileType html       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType css        setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType yml        setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType yaml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType toml       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType twig       setlocal shiftwidth=2 tabstop=2 softtabstop=2
-  autocmd! FileType json       setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType css setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
   autocmd! FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType json setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType lua setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType toml setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType typescriptreact setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType twig setlocal shiftwidth=2 tabstop=2 softtabstop=2
+  autocmd! FileType yaml setlocal shiftwidth=2 tabstop=2 softtabstop=2
 augroup END
 
 set autoindent
