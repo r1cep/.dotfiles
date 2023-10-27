@@ -14,7 +14,6 @@ abbr -a vimdiff "nvim -d "
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
-alias sed="gsed"
 
 ## History
 abbr -a history " history --show-time='%Y-%m-%d %T '"
@@ -25,12 +24,6 @@ set -gx FZF_LEGACY_KEYBINDINGS 0
 # Volta
 set -gx VOLTA_HOME "$XDG_DATA_HOME/volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
-
-# Homebrew
-if test -f /opt/homebrew/bin/brew; and status is-interactive
-    fish_add_path /opt/homebrew/bin
-    eval (/opt/homebrew/bin/brew shellenv)
-end
 
 # ghq
 set -gx GHQ_ROOT "$XDG_DATA_HOME/ghq"
@@ -52,10 +45,32 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
-# Completion for Google Cloud SDK
-source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+# for macOS {{{
+switch (uname)
+  # do things for macOS
+  case Darwin
+    # Homebrew
+    if test -f /opt/homebrew/bin/brew; and status is-interactive
+        fish_add_path /opt/homebrew/bin
+        eval (/opt/homebrew/bin/brew shellenv)
+    end
+
+    # gsed
+    alias sed="gsed"
+
+    # Completion for Google Cloud SDK
+    source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+
+  # do things for Linux
+  case Linux
+
+  case '*'
+end
+# }}}
 
 # Starship
 set -gx STARSHIP_CONFIG "$XDG_CONFIG_HOME/starship/starship.toml"
 set -gx STARSHIP_CACHE "$XDG_CACHE_HOME/starship"
 starship init fish | source
+
+# vim:foldmethod=marker:foldlevel=0

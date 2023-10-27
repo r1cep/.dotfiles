@@ -91,7 +91,8 @@ fi
 
 # WSL2
 # ref. https://stackoverflow.com/questions/66585350/ddev-local-wsl2-how-do-i-get-xdg-open-to-open-a-browser-on-windows-from-wsl2
-export BROWSER="powershell.exe /C start"
+#export BROWSER="powershell.exe /C start"
+#export BROWSER="explorer.exe"
 
 # https://hackmd.io/@badging/wsl2#Troubleshooting-PATH
 #PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
