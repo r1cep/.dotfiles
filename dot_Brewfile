@@ -32,10 +32,10 @@ brew "wakatime-cli"
 
 ## Rust
 brew "bat"
-brew "exa"
 brew "fd"
 brew "git-delta"
 brew "grex"
+brew "lsd"
 brew "procs"
 brew "ripgrep"
 brew "sd"
