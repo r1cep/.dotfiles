@@ -35,7 +35,7 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 
 # Rust utilities
 #abbr -a cat "bat"
-#abbr -a ls "exa"
+abbr -a ls "lsd"
 #abbr -a find "fd"
 #abbr -a ps "procs"
 #abbr -a grep "rg"
