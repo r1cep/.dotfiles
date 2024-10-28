@@ -1,0 +1,22 @@
+{
+  // Prettier
+  "coc.preferences.formatOnSave": true,
+
+  // ESLint
+  "eslint.autoFixOnSave": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.packageManager": "pnpm",
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+
+  // TypeScript
+  "tsserver.enable": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
