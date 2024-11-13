@@ -18,5 +18,12 @@
   "typescript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // TypeScript: Use typescript inside node_modules
+  "tsserver.useLocalTsdk": true,
+
+  // TypeScript: Log & Trace
+  "tsserver.log": "verbose",
+  "tsserver.trace.server": "verbose"
 }
