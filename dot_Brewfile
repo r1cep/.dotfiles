@@ -45,6 +45,7 @@ brew "tokei"
 
 # Desktop Software
 cask "appcleaner"
+cask "cursor"
 cask "deepl"
 cask "discord"
 cask "docker"
