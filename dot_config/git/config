@@ -40,3 +40,6 @@
     line-numbers = true
     keep-plus-minus-markers = true
     side-by-side = true
+
+[rebase]
+    autostash = true
