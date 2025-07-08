@@ -1,19 +1,23 @@
 {
   "permissions": {
     "allow": [
+      "Agent(*)",
       "Bash(cp:*)",
       "Bash(fd:*)",
+      "Bash(find:*)",
       "Bash(ls:*)",
+      "Bash(grep:*)",
       "Bash(mkdir:*)",
       "Bash(mv:*)",
+      "Bash(rg:*)",
       "Bash(pnpm fix:*)",
       "Bash(pnpm lint:*)",
       "Bash(pnpm test:*)",
       "Bash(pnpm tsc:*)",
-      "Bash(pnpm app:*)",
-      "Bash(~/.config/claude/notify.sh:*)"
+      "Bash(pnpm app:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "plan"
   },
   "hooks": {
     "Notification": [
@@ -22,7 +26,18 @@
         "hooks": [
           {
             "type": "command",
-            "command": "~/.config/claude/notify.sh task_completed"
+            "command": "afplay /System/Library/Sounds/Funk.aiff"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Funk.aiff"
           }
         ]
       }
