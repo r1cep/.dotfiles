@@ -65,6 +65,7 @@ claude_progress "進捗報告"
 ```
 
 **自動通知が送られる場面：**
+
 - 重要な変更や削除を行う前
 - ユーザーの意図確認が必要な場合
 - 複数の選択肢から選択を求める場合
@@ -72,6 +73,7 @@ claude_progress "進捗報告"
 - エラーや問題が発生した場合
 
 **使用例：**
+
 - 「10ファイル以上の変更を行います。続行しますか？」
 - 「APIの設計変更を検出しました。変更を適用しますか？」
 - 「テストが失敗しました。修正しますか？」
@@ -79,3 +81,40 @@ claude_progress "進捗報告"
 #### ログ
 
 すべての通知は `~/.config/claude/notifications.log` に記録されます。
+
+## テスト
+
+### テスト関数の使用
+
+- `describe`, `it`は使用しない
+- `test`関数を使用する
+
+### テストユーティリティ
+
+- `render`, `renderComponentWithRouter`, `screen`, `waitFor` は各パッケージの `test-utils.ts` を使用する
+- 相対パスは各パッケージのtest-utils.tsxまでのパスを使用する（例：`../../../tests/test-utils`）
+
+### Storybook テスト
+
+- Storybookでは `storybook/test` の `expect` を使用する
+- テストで `storybook/react-vite` の `composeStories` を使用して `storybook/test` パッケージの Portal Stories を再利用する
+- play関数を使用してStorybookのStoryを実行する
+
+#### composeStories の基本的な使用方法
+
+```tsx
+import { composeStories } from "@storybook/react-vite";
+import { render, waitFor } from "../../../tests/test-utils"; // Relative path to test-utils.tsx
+import * as stories from "./Component.stories";
+
+const { Primary } = composeStories(stories);
+
+test("renders and executes the play function", async () => {
+  const { container } = render(<Primary />);
+
+  // Mount story and run interactions
+  await waitFor(async () => {
+    await Primary.play?.({ canvasElement: container });
+  });
+});
+```
