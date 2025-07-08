@@ -33,9 +33,6 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 set -gx PNPM_HOME "$XDG_DATA_HOME/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 
-# Claude code
-set -gx PATH "$HOME/.claude/local" $PATH
-
 # Rust utilities
 #abbr -a cat "bat"
 abbr -a ls "lsd"
