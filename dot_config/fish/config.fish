@@ -21,10 +21,6 @@ abbr -a history " history --show-time='%Y-%m-%d %T '"
 # fzf
 set -gx FZF_LEGACY_KEYBINDINGS 0
 
-# Volta
-set -gx VOLTA_HOME "$XDG_DATA_HOME/volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-
 # ghq
 set -gx GHQ_ROOT "$XDG_DATA_HOME/ghq"
 
