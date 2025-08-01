@@ -1,10 +1,14 @@
 {
+  // Editor Setting
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
   // Prettier
   "coc.preferences.formatOnSave": true,
 
   // ESLint
   "eslint.autoFixOnSave": true,
-  "eslint.experimental.useFlatConfig": true,
   "eslint.packageManager": "pnpm",
   "eslint.alwaysShowStatus": true,
   "eslint.workingDirectories": [
@@ -12,17 +16,22 @@
       "mode": "auto"
     }
   ],
+  "eslint.options": {
+    "flags": ["unstable_native_nodejs_ts_config"]
+  },
 
-  // TypeScript
-  "tsserver.enable": true,
-  "typescript.preferences.importModuleSpecifier": "relative",
+  // JavaScript
   "javascript.preferences.importModuleSpecifier": "relative",
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // TypeScript
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // TypeScript: TSServer
+  "tsserver.enable": true,
   // TypeScript: Use typescript inside node_modules
   "tsserver.useLocalTsdk": true,
-
   // TypeScript: Log & Trace
   "tsserver.log": "verbose",
   "tsserver.trace.server": "verbose"
