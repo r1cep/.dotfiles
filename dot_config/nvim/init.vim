@@ -67,9 +67,6 @@ set visualbell t_vb=
 set noerrorbells
 " Enable Using mouse
 set mouse=a
-" paste mode
-set pastetoggle=<F12>
-" }}}
 
 " Search & Result {{{
 set ignorecase
