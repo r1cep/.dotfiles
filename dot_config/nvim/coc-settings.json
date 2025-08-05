@@ -19,6 +19,10 @@
   "eslint.options": {
     "flags": ["unstable_native_nodejs_ts_config"]
   },
+  "eslint.trace.server": "verbose",
+
+  // Oxc
+  "oxc.configPath": ".oxlintrc.json",
 
   // JavaScript
   "javascript.preferences.importModuleSpecifier": "relative",
