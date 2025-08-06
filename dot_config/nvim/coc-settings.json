@@ -10,7 +10,6 @@
   // ESLint
   "eslint.autoFixOnSave": true,
   "eslint.packageManager": "pnpm",
-  "eslint.alwaysShowStatus": true,
   "eslint.workingDirectories": [
     {
       "mode": "auto"
@@ -28,6 +27,11 @@
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // Stylelint
+  "stylelintplus.autoFixOnFormat": true,
+  "stylelintplus.autoFixOnSave": true,
+  "stylelintplus.validateOnSave": true,
+
   // TypeScript
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -38,5 +42,12 @@
   "tsserver.useLocalTsdk": true,
   // TypeScript: Log & Trace
   "tsserver.log": "verbose",
-  "tsserver.trace.server": "verbose"
+  "tsserver.trace.server": "verbose",
+
+  "Lua.workspace.library": {
+    "/opt/homebrew/share/nvim/runtime/lua": true,
+    "/opt/homebrew/share/nvim/runtime/lua/vim": true,
+    "/opt/homebrew/share/nvim/runtime/lua/vim/lsp": true
+  },
+  "Lua.diagnostics.globals": ["vim"]
 }
