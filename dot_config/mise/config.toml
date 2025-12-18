@@ -1,6 +1,9 @@
 [tools]
-node = "22.17.1"
+lua = "5.1"
+node = "latest"
 "npm:@anthropic-ai/claude-code" = "latest"
+"npm:@css-modules-kit/ts-plugin" = "latest"
 "npm:commitizen" = "latest"
 "npm:cz-conventional-changelog" = "latest"
-"npm:pnpm" = "10.14.0"
+"npm:graphql-language-service-cli" = "latest"
+"npm:pnpm" = "latest"
