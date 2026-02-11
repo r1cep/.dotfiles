@@ -1,19 +1,28 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "ENABLE_TOOL_SEARCH": "true"
+  },
   "permissions": {
     "allow": [
-      "Agent(*)",
       "Bash(cat:*)",
       "Bash(cp:*)",
       "Bash(fd:*)",
       "Bash(find:*)",
-      "Bash(gh:*)",
       "Bash(ls:*)",
+      "Bash(gh:*)",
+      "Bash(git mv:*)",
       "Bash(grep:*)",
       "Bash(mkdir:*)",
       "Bash(mv:*)",
       "Bash(rg:*)",
-      "Bash(pnpm: :*)"
+      "Bash(pnpm: :*)",
+      "mcp__figma__get_design_context",
+      "mcp__figma-desktop__get_design_context",
+      "mcp__react-aria__list_react_aria_pages",
+      "mcp__react-aria__get_react_aria_page",
+      "mcp__typescript__list_dir"
     ],
     "deny": [],
     "defaultMode": "plan"
@@ -53,7 +62,14 @@
       }
     ]
   },
-  "feedbackSurveyState": {
-    "lastShownTime": 1754015064216
+  "language": "japanese",
+  "enabledPlugins": {
+    "context7-plugin@context7-marketplace": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y ccstatusline@latest",
+    "padding": 0
   }
 }
+
