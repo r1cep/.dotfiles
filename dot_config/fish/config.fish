@@ -32,6 +32,17 @@ set -gx PATH "$CARGO_HOME/bin" $PATH
 # pnpm
 set -gx PNPM_HOME "$XDG_DATA_HOME/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
+alias pnpx="pnpm dlx"
+
+# Claude Code
+set -gx CLAUDE_CONFIG_DIR "$XDG_CONFIG_HOME/claude"
+
+# mise
+if status is-interactive
+  mise activate fish | source
+else
+  mise activate fish --shims | source
+end
 
 # Rust utilities
 #abbr -a cat "bat"
